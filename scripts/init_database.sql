@@ -1,4 +1,6 @@
-CREATE DATABASE DataWarehouse;
+DROP DATABASE IF EXISTS "DataWarehouse" WITH (FORCE);
+
+CREATE DATABASE "DataWarehouse";
 
 CREATE SCHEMA bronze;
 
