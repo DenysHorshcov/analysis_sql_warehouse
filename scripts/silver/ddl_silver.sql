@@ -22,7 +22,6 @@ CREATE TABLE silver.crm_prd_info (
     prd_line     varchar(50),
     prd_start_dt timestamp,
     prd_end_dt   timestamp,
-	cst_create_date DATE,
 	dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -37,7 +36,6 @@ CREATE TABLE silver.crm_sales_details (
     sls_sales    integer,
     sls_quantity integer,
     sls_price    integer,
-	cst_create_date DATE,
 	dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -45,7 +43,6 @@ DROP TABLE IF EXISTS silver.erp_loc_a101;
 CREATE TABLE silver.erp_loc_a101 (
     cid   varchar(50),
     cntry varchar(50),
-	cst_create_date DATE,
 	dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -54,7 +51,6 @@ CREATE TABLE silver.erp_cust_az12 (
     cid   varchar(50),
     bdate date,
     gen   varchar(50),
-	cst_create_date DATE,
 	dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -64,6 +60,5 @@ CREATE TABLE silver.erp_px_cat_g1v2 (
     cat         varchar(50),
     subcat      varchar(50),
     maintenance varchar(50),
-	cst_create_date DATE,
 	dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
